@@ -8,10 +8,11 @@
     <script src="./index.js"></script>
     <title>Donut Clicker</title>
   </head>
-  <!---------------- -->
+  
     <div class="container">
+
       <header>
-        <nav class  >
+        <nav>
           <!-- ABOUT BUTTON -->
           <button class="collapsible">About</button>
             <div class="buttonContent">
@@ -50,9 +51,25 @@
       <!-- MAIN SECTION---------------------------------- -->
     <body>
       <img class ="donut" src = "src/DONUT.jpeg" alt = "donut button" width="500px">
-      <h3 id=""
+      <h3 id="donutCount"><span class="donutCountTitle">0</span> D O N U T S</h3>
+      
+      <div class = "upgrades">
+      <!-- AUTOCLICKER -->
+      <div class = "clicker">
+        <h3 class = "price"> AUTO-CLICKER PRICE</h3>
+        <h2 class = "upgradeCost"><span id = "multiplierCost"> 10 </span> DONUTS </h2>
+            <button class="clickerButton" disabled> Purchase Auto Clicker</button>
+        <h3 class="price">Total Purchased :</h3>
+        <h2 class="totalPurchased"><span id="clickersPurchased">0</span></h2>
+      </div>
+      <!-- MULTIPLIER -->
+      <div class="multiplier">
+          <h3 class="price">CLICK MULTIPLIER PRICE</h3>
+          
+      </div>
+      </div>
+    
     </body> 
     </div>
     
-  </body>
 </html>
