@@ -38,3 +38,47 @@ function purchaseAutoClicker() {
     }
 }
 
+function enableMultiplier(){
+    if(donutCount >= clickMultiplierPrice){
+        purchaseClickMultiplierButton.removeAttribute("disabled")
+    }
+
+    else{
+        purchaseClickMultiplierButton.disabled = true;
+    }
+}
+
+function enableAutoClicker(){
+    if(donutCount >= autoClickerPrice){
+        purchaseAutoClickerButton.removeAttribute("disabled")
+    }
+
+    else{
+        purchaseAutoClickerButton.disabled = true;
+    }
+}
+
+function purchaseClickMultiplier() {
+    if(donutCount >= clickMultiplierPrice) {
+        donutCount -= clickMultiplierPrice;
+        clickMultiplierCount += 1;
+        clickMultiplierPrice = Math.round(clickMultiplierPrice * 1.10);
+        donutNumber.innerText = numberWithCommas(Math.round(donutCount));
+        clickMultiplierPriceSpan.innerText = numberWithCommas(clickMultiplierPrice);
+        clickMultiplierSpan.innerText = numberWithCommas(clickMultiplierCount);
+    }
+}
+
+function getClickMultiplierCount() {
+    return clickMultiplierCount;
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function resetGame() {
+    location.reload();
+}
+
+
