@@ -10,9 +10,10 @@
 body {
     /* background-image: radial-gradient(#59bfd1 20%, transparent 20%), radial-gradient(#fafafa 20%, transparent 20%); */
     background-color:  rgb(228, 76, 164);
-    background-position: 0 0, 50px 50px;
+    /* background-position: 0 0, 50px 50px; */
     background-size: 100px 100px;
     color: #fff;
+    justify-content: center;
 }
 
 /* .container {
@@ -21,15 +22,40 @@ body {
 
 .header {
     background-color: black;
-    text-align: right;
+    text-align: center;
     color: #fff;
 }
+
+#headerTitle {
+    color: aqua;
+}
+
+/* #belowTitle {
+    color:aqua;
+} */
 
 .title{
     color:aqua;
     text-align: center;
 }
 
+.navSections {
+    border: solid;
+}
+
+.mainSection {
+    text-align: center;
+}
+
 .instructions {
     text-align: center;
 }
+
+button {
+    color: #fff;
+    /* text-transform: capitalize; */
+}
+
+/* .headerSection {
+    border: solid;
+} */
