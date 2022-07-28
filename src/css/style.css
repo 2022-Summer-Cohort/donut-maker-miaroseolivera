@@ -8,17 +8,28 @@
 }
 
 body {
-    background-image: radial-gradient(#a0f1b5 20%, transparent 20%), radial-gradient(#fafafa 20%, transparent 20%);
-    background-color:  rgb(252, 229, 230);
+    /* background-image: radial-gradient(#59bfd1 20%, transparent 20%), radial-gradient(#fafafa 20%, transparent 20%); */
+    background-color:  rgb(228, 76, 164);
     background-position: 0 0, 50px 50px;
     background-size: 100px 100px;
     color: #fff;
 }
 
-.container {
+/* .container {
     background-color: black;
+} */
+
+.header {
+    background-color: black;
+    text-align: right;
+    color: #fff;
 }
 
 .title{
     color:aqua;
+    text-align: center;
+}
+
+.instructions {
+    text-align: center;
 }
